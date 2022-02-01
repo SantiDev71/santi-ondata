@@ -1,8 +1,9 @@
 baseURL = "https://santi-ondata.netlify.app"
 theme = "hugo-apero"
-languageCode = "en"
-title = "Personal website of Emily Cooper"
-author = "Emily Cooper"
+defaultContentLanguage: ca
+defaultContentLanguageInSubdir: yes
+title = "Personal website of santi-ondata"
+author = "santi-ondata"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
 disqusShortname = ""

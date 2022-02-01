@@ -1,16 +1,15 @@
-baseURL = "https://santi-ondata.netlify.app"
+baseURL = "https://santi-ondata.netlify.app/"
+languageCode = "en"
 theme = "hugo-apero"
-defaultContentLanguage: ca
-defaultContentLanguageInSubdir: yes
-title = "Personal website of santi-ondata"
-author = "santi-ondata"
+title = "Hugo Apéro"
+author = "Alison Hill"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
-disqusShortname = ""
+disqusShortname = "" # see params.utterances to use utterances instead of Disqus
 metaDataFormat = "yaml"
 footnoteReturnLinkContents = "&#8617;" # ↩
-# set deliberately low for testing choose your prefered number based on the blog layout you've chosen
-paginate = 5
+# set deliberately low for testing choose your preferred number based on the blog layout you've chosen
+paginate = 6
 preserveTaxonomyNames = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
@@ -33,7 +32,7 @@ enableEmoji = true
   orgLocal = "Anywhere"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   favicon = "/img/favicon.ico"
-  logo = "/img/blogophonic-mark-dark.png"
+  logo = "/img/lemon.png"
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -46,32 +45,21 @@ enableEmoji = true
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "apreshill"
   
- 
-   <!--snip snip-->
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water 
   theme = ""
   
   # or, leave theme empty & make your own palette
-  # see docs at https://hugo-apero.netlify.app/learn/color-themes/
-  # the custom scss file must be in the assets/ folder
-  # add the filename name here, without extension
-  # to use hex colors instead of named tachyons colors, include "hex" in filename
-  custom_theme = "named-colors" 
-  
-  
-  
-  # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
   # the custom scss file must be in the assets/ folder
   # add the filename name here, without extension
   # to use hex colors instead of named tachyons colors, include "hex" in filename
-  custom_theme = "" 
+  custom_theme = "hex-colors" 
   
   # use an embedded font-family
   # serif options: Fraunces / EB Garamond / Bitter
-  # sans-serif options: Commissioner / Alegreya Sans / Metropolis
+  # sans-serif options: Commissioner / Atkinson Hyperlegible / Metropolis
   # if you import your own fonts, name them here too
   customtextFontFamily = "Commissioner"
   customheadingFontFamily = "Fraunces"
@@ -79,7 +67,15 @@ enableEmoji = true
   # for more http://tachyons.io/docs/typography/font-family/
   textFontFamily = "sans-serif"
   headingFontFamily = "sans-serif"
-  
+
+  # Configuration of https://utteranc.es/ for comments
+  [params.utterances]
+    use_utterances = true
+    repo_name = "hugo-apero/apero"
+    issue_term = "pathname" # url, pathname, or title
+    theme = "boxy-light"
+    label = "comments :crystal_ball:"
+
   # Social icons may appear on homepage and in site header or footer
   # Configure show/hide above - add as many as you like below
   # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
@@ -88,23 +84,23 @@ enableEmoji = true
   [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://github.com/apreshill/apero"
-  [[params.social]]
-      icon      = "facebook-square" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
-  [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.instagram.com/explore/tags/apero/"
+      url       = "https://github.com/hugo-apero/"
   [[params.social]]
       icon      = "twitter" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://twitter.com/hashtag/apéro"
+      url       = "https://twitter.com/apreshill"
   [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
+      icon      = "discord" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://discord.gg/QbGXCFTMNb"
+  [[params.social]]
+      icon      = "youtube" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://youtube.com/playlist?list=PLzxicn7kBeay3kTPuTQ9lSi7I5jfWmEwc"
+  [[params.social]]
+      icon      = "lemon" # icon name without the 'fa-'
+      icon_pack = "far"
+      url       = "https://hugo-apero.netlify.app/"
 
 [taxonomies]
   category = "categories"
@@ -114,25 +110,40 @@ enableEmoji = true
 [menu]
   [[menu.header]]
     name = "About"
-    title = "About Blogophonic"
+    title = "About Apéro"
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Blog"
-    title = "Blog"
-    url = "/blog/"
+    name = "Get started"
+    title = "Get started using the Hugo Apéro theme"
+    url = "/get-started/"
     weight = 2
+  [[menu.header]]
+    name = "Learn"
+    title = "learn more about using the Hugo Apéro theme"
+    url = "/learn/"
+    weight = 3
   [[menu.header]]
     name = "Projects"
     title = "Project Portfolio"
     url = "/project/"
-    weight = 3
+    weight = 4
   [[menu.header]]
     name = "Talks"
     title = "Talks"
     url = "/talk/"
-    weight = 4
-    
+    weight = 5
+  # [[menu.header]]
+   # name = "A collection"
+   # title = "A collection"
+   # url = "/collection/"
+   # weight = 5
+  [[menu.header]]
+    name = "Elements"
+    title = "Element Page"
+    url = "/elements/"
+    weight = 6
+
   # Configure footer  
   [[menu.footer]]
     name = "License"
@@ -144,6 +155,11 @@ enableEmoji = true
     title = "Contact form"
     url = "/contact/"
     weight = 2
+  [[menu.footer]]
+    name = "Contributors"
+    title = "Contributors"
+    url = "/contributors/"
+    weight = 3
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
@@ -167,4 +183,3 @@ enableEmoji = true
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
-

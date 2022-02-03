@@ -188,15 +188,15 @@ DefaultContentLanguage = "ca"
 
 [languages]
   [languages.ca]
-    title = "Les dades son actius per a la teva empresa"
+    title = "Analitza les teves dades amb Spark"
     languageName = "Catalan"
     weight = 1
   [languages.en]
-    title = "The data is active for your business"
+    title = "Analyze your data with  Spark"
     languageName = "English"
     weight = 2
   [languages.es]
-    title = "Los datos son activos para tu empresa"
+    title = "Analiza tus datos con Spark"
     languageName = "Spanish"
     weight = 3
 

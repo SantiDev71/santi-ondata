@@ -48,7 +48,7 @@ DefaultContentLanguage = "ca"
   orgName = "RStudio"
   orgLocal = "Anywhere"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  favicon = "/img/favicony.ico"
+  favicon = "/img/favicon.ico"
   
   mainSections = ["blog", "project", "talk"]
   navallcaps = true

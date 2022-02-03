@@ -18,15 +18,15 @@ DefaultContentLanguage = "ca"
 
 [languages]
   [languages.ca]
-    title = "Analitza les teves dades amb Spark"
+    title = "Converteix les teves dades en informació útil"
     languageName = "Catalan"
     weight = 1
   [languages.en]
-    title = "Analyze your data with  Spark"
+    title = "Turn your data into actionable insights"
     languageName = "English"
     weight = 2
   [languages.es]
-    title = "Analiza tus datos con Spark"
+    title = "Convierte tus datos en informacion util"
     languageName = "Spanish"
     weight = 3
 
@@ -48,7 +48,7 @@ DefaultContentLanguage = "ca"
   orgName = "RStudio"
   orgLocal = "Anywhere"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  favicon = "/img/favicon.ico"
+  favicon = "/img/favicony.ico"
   
   mainSections = ["blog", "project", "talk"]
   navallcaps = true

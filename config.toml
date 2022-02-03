@@ -1,4 +1,4 @@
-baseURL = "https://santi-ondata.netlify.app/"
+baseURL = "https://santionsparkdata.netlify.app/"
 languageCode = "ca"
 theme = "hugo-apero"
 title = "Hugo Apéro"

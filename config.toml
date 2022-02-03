@@ -184,7 +184,7 @@ enableEmoji = true
     disable = false
     privacyEnhanced = true
   
-  DefaultContentLanguage = "ca"
+DefaultContentLanguage = "ca"
 
 [languages]
   [languages.ca]
@@ -199,4 +199,4 @@ enableEmoji = true
     title = "Los datos son activos para tu empresa"
     languageName = "Spanish"
     weight = 3
-  defaultContentLanguageInSubdir = true
+

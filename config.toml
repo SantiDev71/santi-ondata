@@ -1,7 +1,7 @@
 baseURL = "https://santionsparkdata.netlify.app/"
 languageCode = "ca"
 theme = "hugo-apero"
-title = "Hugo Apéro"
+title = "Analitza les teves dades amb Spark"
 author = "Santi"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -13,6 +13,23 @@ paginate = 6
 preserveTaxonomyNames = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
+
+DefaultContentLanguage = "ca"
+
+[languages]
+  [languages.ca]
+    title = "Analitza les teves dades amb Spark"
+    languageName = "Catalan"
+    weight = 1
+  [languages.en]
+    title = "Analyze your data with  Spark"
+    languageName = "English"
+    weight = 2
+  [languages.es]
+    title = "Analiza tus datos con Spark"
+    languageName = "Spanish"
+    weight = 3
+
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -184,19 +201,4 @@ enableEmoji = true
     disable = false
     privacyEnhanced = true
   
-DefaultContentLanguage = "ca"
-
-[languages]
-  [languages.ca]
-    title = "Analitza les teves dades amb Spark"
-    languageName = "Catalan"
-    weight = 1
-  [languages.en]
-    title = "Analyze your data with  Spark"
-    languageName = "English"
-    weight = 2
-  [languages.es]
-    title = "Analiza tus datos con Spark"
-    languageName = "Spanish"
-    weight = 3
 

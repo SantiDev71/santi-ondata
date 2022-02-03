@@ -1,8 +1,8 @@
 baseURL = "https://santi-ondata.netlify.app/"
-languageCode = "en"
+languageCode = "ca"
 theme = "hugo-apero"
 title = "Hugo Apéro"
-author = "Alison Hill"
+author = "Santi"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
 disqusShortname = "" # see params.utterances to use utterances instead of Disqus
@@ -183,3 +183,20 @@ enableEmoji = true
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+  
+  DefaultContentLanguage = "ca"
+
+[languages]
+  [languages.ca]
+    title = "Les dades son actius per a la teva empresa"
+    languageName = "Catalan"
+    weight = 1
+  [languages.en]
+    title = "The data is active for your business"
+    languageName = "English"
+    weight = 2
+  [languages.es]
+    title = "Los datos son activos para tu empresa"
+    languageName = "Spanish"
+    weight = 3
+  defaultContentLanguageInSubdir = true

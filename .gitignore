@@ -1,9 +1,8 @@
-
-Thumbs.db.Rproj.user
+.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-blogdown
-.DS_Store # if a windows user, Thumbs.db instead
-public/
-.Rproj.user
+.DS_Store
+Thumbs.db
+/public/
+/resources/

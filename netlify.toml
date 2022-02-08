@@ -1,6 +1,12 @@
 [build]
-  publish = "public"
-  command = "hugo"
+ command: hugo
+ commandOrigin: config
+ environment:
+ - HUGO_VERSION
+ - HUGO_ENV
+ - HUGO_ENABLEGITINFO
+ publish: /opt/build/repo/public
+ publishOrigin: config
 
 [context.production.environment]
   HUGO_VERSION = "0.92.0"
